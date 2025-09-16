@@ -1,0 +1,18 @@
+2025-09-16 19:37:29, MOVE, v:1, k:toalha, mode:DOWN
+2025-09-16 19:37:31, MOVE, v:1, k:toalha, mode:PICK
+2025-09-16 19:37:35, MOVE, v:1, k:toalha, mode:BACK
+2025-09-16 19:37:45, MOVE, v:1, k:toalha, mode:PICK
+2025-09-16 19:37:46, EXEC, v:1, k:toalha, mode:LOCK, rate:100, size:0
+2025-09-16 19:37:47, EXEC, v:1, k:toalha, mode:LOCK, rate:100
+2025-09-16 19:37:50, MOVE, v:1, k:toalha, mode:BACK
+2025-09-16 19:40:01, EXEC, v:1, k:toalha, mode:FREE, size:1
+2025-09-16 20:02:58, EXEC, v:1, k:toalha, mode:FREE
+2025-09-16 20:03:08, MOVE, v:1, k:toalha, mode:PICK
+2025-09-16 20:03:10, EXEC, v:1, k:toalha, mode:LOCK, rate:0
+2025-09-16 20:03:43, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:1
+2025-09-16 20:12:43, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:15
+2025-09-16 20:12:43, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:15
+2025-09-16 20:12:56, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:15
+2025-09-16 20:17:41, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:18
+2025-09-16 20:19:00, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:19
+2025-09-16 20:19:11, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:19

@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-16_19-37-46",
+            "content": "@@ -1,25 +0,0 @@\n-print('toalha do ben 10')\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-16_19-40-01",
+            "content": "@@ -4,23 +4,15 @@\n nt('\n-minha \n toalha \n-%C3%A9 \n do b\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-09-16_20-03-43",
+            "content": "@@ -1,8 +1,28 @@\n+@@ -1,281 +1,33 @@%0A-\n class To\n@@ -25,17 +25,19 @@\n s Towel:\n-%0A\n+%250A\n     def \n@@ -47,25 +47,27 @@\n nit__(self):\n-%0A\n+%250A\n         self\n@@ -79,14 +79,20 @@\n r = \n-%22red%22%0A\n+%2522red%2522%250A\n     \n@@ -111,12 +111,18 @@\n e = \n-%22M%22%0A\n+%2522M%2522%250A\n     \n@@ -142,18 +142,22 @@\n ess = 10\n-%0A%0A\n+%250A%250A\n     # de\n@@ -168,17 +168,19 @@\n y(self):\n-%0A\n+%250A\n     #   \n@@ -199,10 +199,14 @@\n  = 0\n-%0A%0A\n+%250A%250A\n toal\n@@ -217,17 +217,19 @@\n  Towel()\n-%0A\n+%250A\n print(to\n@@ -243,15 +243,16 @@\n lor)\n-%0Atoalha\n+%250Atowel\n .col\n@@ -260,16 +260,22 @@\n r = \n-%22\n+%2522\n white\n-%22%0A\n+%2522%250A\n prin\n@@ -289,17 +289,19 @@\n a.color)\n-%0A\n+%250A\n print(to\n@@ -310,17 +310,19 @@\n ha.size)\n-%0A\n+%250A\n print(to\n@@ -333,9 +333,51 @@\n .wetness\n-)\n+%0A+print('minha toalha %25C3%25A9 do ben 10'%0A )%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-09-16_20-12-56",
+            "content": "@@ -31,31 +31,8 @@\n self\n-, color: str, size: str\n ):%0A \n@@ -51,21 +51,21 @@\n color = \n-color\n+%22red%22\n %0A       \n@@ -77,20 +77,19 @@\n .size = \n-size\n+%22M%22\n %0A       \n@@ -108,14 +108,17 @@\n s = \n+1\n 0%0A%0A   \n+ #\n  def\n@@ -130,27 +130,16 @@\n self\n-, amount: int\n ):%0A   \n+ #\n     \n@@ -156,105 +156,27 @@\n t = \n-amount%0A        return wetness + amount%0A%0Atoalha = Towel(%22red%22, %22G%22)%0Atoalha2 = Towel(%22black%22, %22P%22)%0A\n+0%0A%0Atoalha = Towel()\n %0Apri\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-09-16_20-17-41",
+            "content": "@@ -255,23 +255,8 @@\n G%22)%0A\n-toalha.dry(10)%0A\n toal\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-09-16_20-19-00",
+            "content": "@@ -206,21 +206,16 @@\n  return \n-self.\n wetness \n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-09-16_20-19-11",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        self.color = color\n        self.size = size\n        self.wetness = 0\n\n    def dry(self, amount: int):\n        self.amout = amount\n        return self.wetness + amount\n\ntoalha = Towel(\"red\", \"G\")\ntoalha.dry(10)\ntoalha2 = Towel(\"black\", \"P\")\n\nprint(toalha.color)\ntoalha.color = \"white\"\nprint(toalha.color)\nprint(toalha.size)\nprint(toalha.wetness)",
+            "lines": "19"
+        }
+    ]
+}
