@@ -32,8 +32,13 @@
         },
         {
             "label": "2025-09-16_20-19-11",
-            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        self.color = color\n        self.size = size\n        self.wetness = 0\n\n    def dry(self, amount: int):\n        self.amout = amount\n        return self.wetness + amount\n\ntoalha = Towel(\"red\", \"G\")\ntoalha.dry(10)\ntoalha2 = Towel(\"black\", \"P\")\n\nprint(toalha.color)\ntoalha.color = \"white\"\nprint(toalha.color)\nprint(toalha.size)\nprint(toalha.wetness)",
+            "content": "@@ -143,85 +143,75 @@\n def \n-__str__(self):%0A        return f%22color: %7Bself.color%7D, tam: %7Bself.size%7D, umi: %7B\n+dry(self, amount: int):%0A        self.amout = amount%0A        return \n self\n@@ -222,11 +222,17 @@\n ness\n-%7D%22%0A\n+ + amount\n %0A%0Ato\n@@ -256,16 +256,31 @@\n %22, %22G%22)%0A\n+toalha.dry(10)%0A\n toalha2 \n",
             "lines": "19"
+        },
+        {
+            "label": "2025-09-18_10-11-10",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        self.color = color\n        self.size = size\n        self.wetness = 0\n\n    def __str__(self):\n        return f\"color: {self.color}, tam: {self.size}, umi: {self.wetness}\"\n\n\ntoalha = Towel(\"red\", \"G\")\ntoalha2 = Towel(\"black\", \"P\")\n\nprint(toalha.color)\ntoalha.color = \"white\"\nprint(toalha.color)\nprint(toalha.size)\nprint(toalha.wetness)",
+            "lines": "18"
         }
     ]
 }
