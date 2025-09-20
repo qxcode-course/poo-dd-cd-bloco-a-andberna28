@@ -6,12 +6,16 @@ expanded:
 - campanha-principal
 - configuracao-e-aquecimento
 - bloco_b-primeiras-classes
-tasks: {}
+- bloco_a-configuração-de-ambiente
+- bloco_a-treino-de-algoritmos
+- bloco_a-práticas-com-o-git
+tasks:
+  git_pratica: '{rate:80, alone:10, study:50}'
 flags:
   quests: 2
   tracks: 0
   tasks: 0
   graph: 1
   xray: 0
-index: toalha
+index: git_pratica
 filter: []
