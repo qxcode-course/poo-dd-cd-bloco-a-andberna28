@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-23_20-03-39",
+            "content": "@@ -295,16 +295,17 @@\n (%22%22, %22%22)\n+%5D\n %0A    whi\n@@ -478,183 +478,6 @@\n rgs%5B\n-0%5D == %22init%22:%0A            species = args%5B1%5D%0A            sound = args%5B2%5D%0A            animal = Animal(species, age, sound)%0A        elif args%5B0%5D == %22show%22:%0A            print(animal)\n+%5D\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-09-23_20-06-03",
+            "content": "@@ -656,11 +656,4 @@\n al)%0A\n-%0Amain()\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-23_20-06-23",
+            "content": "@@ -581,16 +581,21 @@\n species,\n+ age,\n  sound)%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-09-23_20-06-58",
+            "content": "@@ -192,16 +192,25 @@\n eturn f%22\n+Esp%C3%A9cie: \n %7Bself.sp\n@@ -215,17 +215,25 @@\n species%7D\n-:\n+, Idade: \n %7Bself.ag\n@@ -234,17 +234,23 @@\n elf.age%7D\n-:\n+, Som: \n %7Bself.so\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-09-23_20-07-19",
+            "content": "@@ -237,169 +237,8 @@\n %7D%22%0A%0A\n-    def ageBy(self, increment: int) -%3E None:%0A        self.age += self.increment%0A        if self.age %3E= 4:%0A            print(f%22Warning: %7Bself.species%7D morreu)%0A%0A%0A%0A\n def \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-09-23_20-12-24",
+            "content": "@@ -357,16 +357,17 @@\n   print(\n+f\n %22Warning\n@@ -368,20 +368,17 @@\n arning: \n-%22 + \n+%7B\n self.spe\n@@ -385,20 +385,16 @@\n cies\n- + %22\n+%7D\n  morreu\n-%22\n )%0A%0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-23_20-12-45",
+            "content": "@@ -401,74 +401,9 @@\n u%22)%0A\n-            self.wetness = self.getMaxWetness()%0A%0A    def getMaxAge\n+%0A\n %0A%0Ade\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-23_20-15-32",
+            "content": "@@ -453,10 +453,8 @@\n %0A   \n- #\n  def\n@@ -463,22 +463,16 @@\n etMaxAge\n-(self)\n %0A%0Adef ma\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-09-23_20-15-47",
+            "content": "class Animal:\n    def __init__(self, species: str, sound: str):\n        self.species: str = species\n        self.sound: str = sound\n        self.age: int = 0\n\n    def __str__(self):\n        return f\"{self.species}:{self.age}:{self.sound}\"\n\n    def ageBy(self, increment: int) -> None:\n        self.age += self.increment\n        if self.age >= 4:\n            print(\"Warning: \" + self.species + \" morreu\")\n            self.wetness = self.getMaxWetness()\n\n    # def getMaxAge(self)\n\ndef main():\n    animal = Animal(\"\", \"\")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            species = args[1]\n            sound = args[2]\n            animal = Animal(species, sound)\n        elif args[0] == \"show\":\n            print(animal)\n\nmain()",
+            "lines": "33"
+        }
+    ]
+}
