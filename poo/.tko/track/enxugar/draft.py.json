@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-23_19-24-05",
+            "content": "@@ -171,19 +171,17 @@\n eturn f%22\n-col\n+C\n or: %7Bsel\n@@ -194,11 +194,15 @@\n r%7D, \n-t\n+T\n am\n+anho\n : %7Bs\n@@ -212,19 +212,23 @@\n .size%7D, \n-u\n+U\n mi\n+dade\n : %7Bself.\n@@ -477,33 +477,32 @@\n -%3E None:%0A       \n- \n self.wetness = 0\n@@ -505,62 +505,8 @@\n  = 0\n-%0A        print(%22A toalha foi torcida, umidade zerada%22)\n %0A%0A  \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-09-23_19-25-43",
+            "content": "@@ -171,17 +171,19 @@\n eturn f%22\n-C\n+col\n or: %7Bsel\n@@ -196,15 +196,11 @@\n r%7D, \n-T\n+t\n am\n-anho\n : %7Bs\n@@ -214,15 +214,11 @@\n e%7D, \n-U\n+u\n mi\n-dade\n : %7Bs\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-23_19-26-38",
+            "content": "@@ -907,24 +907,50 @@\n r = input()%0A\n+        print(%22$%22 + line)%0A\n         args\n@@ -1055,11 +1055,13 @@\n == %22\n-new\n+criar\n %22:%0A \n@@ -1183,12 +1183,15 @@\n == %22\n-show\n+mostrar\n %22:%0A \n@@ -1240,19 +1240,23 @@\n %5B0%5D == %22\n-dry\n+enxugar\n %22:%0A     \n@@ -1345,21 +1345,22 @@\n %5B0%5D == %22\n-wring\n+torcer\n %22:%0A     \n@@ -1380,24 +1380,110 @@\n .wringOut()%0A\n+        elif args%5B0%5D == %22seca%22:%0A            print(%22sim%22 if toalha.isDry() else %22nao%22)%0A\n         else\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-23_19-27-21",
+            "content": "@@ -1029,13 +1029,11 @@\n == %22\n-criar\n+new\n %22:%0A \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-23_19-27-38",
+            "content": "@@ -1157,15 +1157,12 @@\n == %22\n-mostrar\n+show\n %22:%0A \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-23_19-27-58",
+            "content": "@@ -957,34 +957,8 @@\n  %22)%0A\n-        print(%22$%22 + line)%0A\n     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-09-23_19-28-47",
+            "content": "@@ -1383,94 +1383,8 @@\n t()%0A\n-        elif args%5B0%5D == %22seca%22:%0A            print(%22sim%22 if toalha.isDry() else %22nao%22)%0A\n     \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-09-23_19-29-46",
+            "content": "@@ -915,34 +915,8 @@\n t()%0A\n-        print(%22$%22 + line)%0A\n     \n@@ -953,16 +953,42 @@\n it(%22 %22)%0A\n+        print(%22$%22 + line)%0A\n         \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-23_19-32-48",
+            "content": "@@ -481,24 +481,25 @@\n one:%0A       \n+ \n self.wetness\n@@ -494,32 +494,86 @@\n self.wetness = 0\n+%0A        print(%22A toalha foi torcida, umidade zerada%22)\n %0A%0A    def getMax\n@@ -1244,15 +1244,11 @@\n == %22\n-enxugar\n+dry\n %22:%0A \n@@ -1345,14 +1345,13 @@\n == %22\n-torcer\n+wring\n %22:%0A \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-09-23_19-34-05",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n        self.color = color\n        self.size = size\n        self.wetness = 0\n\n    def __str__(self):\n        return f\"Cor: {self.color}, Tamanho: {self.size}, Umidade: {self.wetness}\"\n\n    def dry(self, amount: int) -> None:\n        self.wetness += amount\n        if self.wetness >= self.getMaxWetness():\n            print(\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n    def wringOut(self) -> None:\n       self.wetness = 0\n\n    def getMaxWetness(self) -> int:\n        if self.size == \"P\":\n            return 10\n        if self.size == \"M\":\n            return 20\n        if self.size == \"G\":\n            return 30\n        return 0\n\n    def isDry(self) -> bool:\n        return self.wetness == 0\n\ndef main():\n    toalha = Towel(\"\", \"\")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"criar\":\n            color = args[1]\n            size = args[2]\n            toalha = Towel(color, size)\n        elif args[0] == \"mostrar\":\n            print(toalha)\n        elif args[0] == \"enxugar\":\n            amount: int = int(args[1])\n            toalha.dry(amount)\n        elif args[0] == \"torcer\":\n            toalha.wringOut()\n        elif args[0] == \"seca\":\n            print(\"sim\" if toalha.isDry() else \"nao\")\n        else:\n            print(\"fail: Comando inv\u00e1lido\")\n\nmain()",
+            "lines": "55"
+        }
+    ]
+}
