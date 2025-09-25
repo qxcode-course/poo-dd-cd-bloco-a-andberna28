@@ -1,0 +1,30 @@
+2025-09-25 20:32:57, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 20:34:43, EXEC, v:1, k:animal, mode:FULL, rate:25, size:34
+2025-09-25 20:35:30, EXEC, v:1, k:animal, mode:FULL, rate:25, size:34
+2025-09-25 20:37:43, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 20:38:49, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 20:38:50, EXEC, v:1, k:animal, mode:FULL, rate:25, size:39
+2025-09-25 20:42:45, EXEC, v:1, k:animal, mode:FULL, rate:25, size:41
+2025-09-25 20:43:40, EXEC, v:1, k:animal, mode:FULL, rate:25, size:42
+2025-09-25 20:43:49, EXEC, v:1, k:animal, mode:FULL, rate:25
+2025-09-25 20:44:12, EXEC, v:1, k:animal, mode:FULL, rate:25, size:41
+2025-09-25 20:44:36, EXEC, v:1, k:animal, mode:FULL, rate:25, size:42
+2025-09-25 20:44:43, EXEC, v:1, k:animal, mode:FULL, rate:25, size:42
+2025-09-25 20:45:04, EXEC, v:1, k:animal, mode:FULL, rate:25, size:37
+2025-09-25 20:45:50, EXEC, v:1, k:animal, mode:FULL, rate:25, size:37
+2025-09-25 20:46:13, EXEC, v:1, k:animal, mode:FULL, rate:50, size:37
+2025-09-25 20:46:37, EXEC, v:1, k:animal, mode:FULL, rate:50
+2025-09-25 20:47:57, EXEC, v:1, k:animal, mode:FULL, rate:50, size:43
+2025-09-25 20:48:15, EXEC, v:1, k:animal, mode:FULL, rate:50, size:45
+2025-09-25 20:48:51, EXEC, v:1, k:animal, mode:FULL, rate:50, size:45
+2025-09-25 20:49:42, EXEC, v:1, k:animal, mode:FULL, rate:50, size:47
+2025-09-25 20:50:19, EXEC, v:1, k:animal, mode:FULL, rate:100, size:47
+2025-09-25 20:51:29, EXEC, v:1, k:animal, mode:FULL, rate:100
+2025-09-25 20:51:32, MOVE, v:1, k:animal, mode:BACK
+2025-09-25 20:52:26, SELF, v:1, k:animal, rate:100, iagen:q
+2025-09-25 20:52:53, MOVE, v:1, k:animal, mode:PICK
+2025-09-25 20:52:54, EXEC, v:1, k:animal, mode:FULL, rate:100, size:47
+2025-09-25 20:53:11, MOVE, v:1, k:animal, mode:BACK
+2025-09-25 20:54:25, SELF, v:1, k:animal, rate:100, iagen:copilot_deu_spoiler_de_uma_funcao, alone:9, study:30
+2025-09-25 20:54:46, MOVE, v:1, k:carro, mode:DOWN
+2025-09-25 20:54:48, MOVE, v:1, k:carro, mode:PICK

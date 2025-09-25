@@ -8,12 +8,21 @@ class Animal:
         return f"{self.species}:{self.age}:{self.sound}"
 
     def ageBy(self, increment: int) -> None:
-        self.age += self.increment
-        if self.age >= 4:
-            print("Warning: " + self.species + " morreu")
-            self.wetness = self.getMaxWetness()
+        self.age += increment
+        if self.age >= self.getMaxAge():
+            print("warning: " + self.species + " morreu")
+            self.age = self.getMaxAge()
 
-    # def getMaxAge(self)
+    def noise(self) -> None:
+        if  self.age == 0:
+            print("---")
+        elif self.age == self.getMaxAge():
+            print("RIP")
+        else:
+            print(self.sound)
+
+    def getMaxAge(self) -> int:
+        return 4
 
 def main():
     animal = Animal("", "")
@@ -29,5 +38,10 @@ def main():
             animal = Animal(species, sound)
         elif args[0] == "show":
             print(animal)
+        elif args[0] == "grow":
+            increment: int = int(args[1])
+            animal.ageBy(increment)
+        elif args[0] == "noise":
+            animal.noise()
 
 main()

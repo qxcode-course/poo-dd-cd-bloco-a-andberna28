@@ -11,6 +11,7 @@ expanded:
 - bloco_a-práticas-com-o-git
 tasks:
   git_pratica: '{rate:80, alone:10, study:50}'
+  animal: '{rate:100, iagen:copilot_deu_spoiler_de_uma_funcao, alone:9, study:30}'
   enxugar: '{rate:100, study:40}'
 flags:
   quests: 2
@@ -18,5 +19,5 @@ flags:
   tasks: 0
   graph: 1
   xray: 0
-index: animal
+index: carro
 filter: []
