@@ -11,15 +11,16 @@ expanded:
 - bloco_a-práticas-com-o-git
 tasks:
   git_pratica: '{rate:80, alone:10, study:50}'
-  toalha: '{rate:100, guide:aula, alone:7, study:70}'
+  toalha: '{rate:100, guide:aula, alone:8, study:70}'
   animal: '{rate:100, iagen:copilot_deu_spoiler_de_uma_funcao, alone:9, study:30}'
   carro: '{rate:100, iagen:copilot_ajudou_no_teste_viajar_longe, alone:9, study:80}'
-  enxugar: '{rate:100, study:40}'
+  calculadora: '{rate:100, alone:10, study:40}'
+  enxugar: '{rate:100, guide:aula, alone:8, study:40}'
 flags:
   quests: 2
   tracks: 0
   tasks: 0
   graph: 1
   xray: 0
-index: calculadora
+index: toalha
 filter: []
